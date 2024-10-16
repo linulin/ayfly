@@ -148,19 +148,19 @@ AyflyFrame::AyflyFrame(const wxString &title, wxArrayString &filenames) :
     chnlATxt->Wrap(-1);
     chnlATxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString));
 
-    chnlLblSizer->Add(chnlATxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    chnlLblSizer->Add(chnlATxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
     chnlBTxt = new wxStaticText(this, wxID_ANY, wxT("B:"), wxDefaultPosition, wxDefaultSize, wxST_NO_AUTORESIZE);
     chnlBTxt->Wrap(-1);
     chnlBTxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString));
 
-    chnlLblSizer->Add(chnlBTxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    chnlLblSizer->Add(chnlBTxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
     chnlCTxt = new wxStaticText(this, wxID_ANY, wxT("C:"), wxDefaultPosition, wxDefaultSize, wxST_NO_AUTORESIZE);
     chnlCTxt->Wrap(-1);
     chnlCTxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString));
 
-    chnlLblSizer->Add(chnlCTxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    chnlLblSizer->Add(chnlCTxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
     volumeAllSizer->Add(chnlLblSizer, 0, wxFIXED_MINSIZE | wxALIGN_CENTER_VERTICAL | wxTOP | wxBOTTOM, 5);
 
@@ -200,7 +200,7 @@ AyflyFrame::AyflyFrame(const wxString &title, wxArrayString &filenames) :
 
     btnLink = new wxToggleButton(this, BUTTON_LINK_ID, wxT("-Link-"), wxDefaultPosition, wxDefaultSize, 0);
     btnLink->SetValue(true);
-    btnLinkSizer->Add(btnLink, 0, wxALIGN_CENTER_VERTICAL, 5);
+    btnLinkSizer->Add(btnLink, 0, wxALIGN_CENTER_HORIZONTAL, 5);
 
     volumeAllSizer->Add(btnLinkSizer, 0, wxALIGN_CENTER_VERTICAL | wxRIGHT | wxLEFT, 10);
 

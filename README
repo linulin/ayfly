@@ -1,10 +1,10 @@
 How-to compile Ayfly:
 
-wxWidgets is required to build the program. Tested with version 3.0.x.
+wxWidgets is required to build the program. Tested with version 3.2.x.
 For Linux SDL library is also required.
 
-Installing build dependencies on Debian 10 ("buster"):
-    sudo apt install build-essential automake libwxgtk3.0-dev libsdl1.2-dev
+Installing build dependencies on Debian 12 ("bookworm"):
+    sudo apt install build-essential automake libwxgtk3.2-dev libsdl1.2-dev
 
 Ayfly uses standard automake tools. You can build it as follows:
 
