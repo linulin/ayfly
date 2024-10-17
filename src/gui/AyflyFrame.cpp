@@ -146,19 +146,22 @@ AyflyFrame::AyflyFrame(const wxString &title, wxArrayString &filenames) :
 
     chnlATxt = new wxStaticText(this, wxID_ANY, wxT("A:"), wxDefaultPosition, wxDefaultSize, wxST_NO_AUTORESIZE);
     chnlATxt->Wrap(-1);
-    chnlATxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString));
+    chnlATxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL,
+                             wxFONTWEIGHT_BOLD, false, wxEmptyString));
 
     chnlLblSizer->Add(chnlATxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
     chnlBTxt = new wxStaticText(this, wxID_ANY, wxT("B:"), wxDefaultPosition, wxDefaultSize, wxST_NO_AUTORESIZE);
     chnlBTxt->Wrap(-1);
-    chnlBTxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString));
+    chnlBTxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL,
+                             wxFONTWEIGHT_BOLD, false, wxEmptyString));
 
     chnlLblSizer->Add(chnlBTxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
     chnlCTxt = new wxStaticText(this, wxID_ANY, wxT("C:"), wxDefaultPosition, wxDefaultSize, wxST_NO_AUTORESIZE);
     chnlCTxt->Wrap(-1);
-    chnlCTxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString));
+    chnlCTxt->SetFont(wxFont(wxNORMAL_FONT->GetPointSize(), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL,
+                             wxFONTWEIGHT_BOLD, false, wxEmptyString));
 
     chnlLblSizer->Add(chnlCTxt, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
